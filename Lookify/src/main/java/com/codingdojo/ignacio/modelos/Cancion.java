@@ -47,21 +47,6 @@ public class Cancion {
 	
 	public Cancion() {}
 
-	public Cancion(@NotNull @Size(min = 5, max = 50) String titulo, @NotNull @Size(min = 5, max = 50) String artista,
-			@NotNull @Size(min = 1, max = 10) int rating) {
-		this.titulo = titulo;
-		this.artista = artista;
-		this.rating = rating;
-	}
-
-	public Cancion(Long id, @NotNull @Size(min = 5, max = 50) String titulo,
-			@NotNull @Size(min = 5, max = 50) String artista, @NotNull @Size(min = 1, max = 10) int rating) {
-		this.id = id;
-		this.titulo = titulo;
-		this.artista = artista;
-		this.rating = rating;
-	}
-
 	public Long getId() {
 		return id;
 	}
